@@ -8,7 +8,6 @@ import {
   ArrowForward,
   ArrowRight,
   Icon,
-  ImgContainer,
 } from "./MainSectionElements";
 import { Button } from "../ButtonElement";
 import Icon1 from "../../images/svg-2.svg";

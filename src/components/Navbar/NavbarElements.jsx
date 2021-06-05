@@ -3,7 +3,6 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  /* background: ${({ scrollNav }) => (scrollNav ? "black" : "white")}; */
   background: white;
   height: 80px;
   margin-top: -80px;
@@ -81,11 +80,10 @@ export const NavLinks = styled(LinkS)`
   height: 100%;
   cursor: pointer;
 
-  &.active {
-    border-bottom: 3px solid #005cb2;
-  }
-
   &:hover {
     color: #6ab7ff;
+  }
+  &.active {
+    border-bottom: 4px solid #005cb2;
   }
 `;

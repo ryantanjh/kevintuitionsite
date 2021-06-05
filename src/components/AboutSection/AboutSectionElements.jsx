@@ -19,15 +19,10 @@ export const AboutWrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
-`;
-
-export const AboutRow = styled.div`
-  display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
-
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};

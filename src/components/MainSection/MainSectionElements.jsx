@@ -13,7 +13,6 @@ export const MainContainer = styled.div`
   align-items: center;
   padding: 0 30px;
   height: 900px;
-  position: relative;
   z-index: 1;
   border-radius: 0% 0% 50% 50%;
   @media screen and (max-width: 768px) {
@@ -67,7 +66,6 @@ export const Mainp = styled.p`
 export const MainBtnWrapper = styled.div`
   margin-top: 32px;
   display: flex;
-  flex-direction: column;
   align-items: center;
 `;
 

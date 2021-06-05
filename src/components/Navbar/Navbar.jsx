@@ -11,25 +11,12 @@ import {
   NavLinks,
 } from "./NavbarElements";
 const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(false);
-
-  const changeNav = () => {
-    if (window.scrollY >= 80) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeNav);
-  }, []);
   const toggleHome = () => {
     scroll.scrollToTop();
   };
   return (
     <>
-      <Nav scrollNav={scrollNav}>
+      <Nav>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
             Kevin's Tuition

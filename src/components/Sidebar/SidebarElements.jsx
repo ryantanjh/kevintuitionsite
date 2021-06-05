@@ -4,7 +4,7 @@ import { Link as LinkS } from "react-scroll";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
-  z-index: 999;
+  z-index: 12;
   width: 100%;
   height: 100%;
   background: #115293;
@@ -53,7 +53,7 @@ export const SidebarLink = styled(LinkS)`
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(5, 80px);
   text-align: center;
 
   @media screen and (max-width: 480px) {

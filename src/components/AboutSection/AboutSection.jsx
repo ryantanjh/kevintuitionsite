@@ -33,14 +33,13 @@ const AboutSection = ({
   return (
     <>
       <AboutContainer lightBg={lightBg} id={id}>
-        <AboutWrapper>
-          <AboutRow imgStart={imgStart}>
-            <Column1>
-              <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
-                {/* <BtnWrap>
+        <AboutWrapper imgStart={imgStart}>
+          <Column1>
+            <TextWrapper>
+              <TopLine>{topLine}</TopLine>
+              <Heading lightText={lightText}>{headline}</Heading>
+              <Subtitle darkText={darkText}>{description}</Subtitle>
+              {/* <BtnWrap>
                   <Button
                     to="home"
                     smooth={true}
@@ -55,14 +54,13 @@ const AboutSection = ({
                     {buttonLabel}
                   </Button>
                 </BtnWrap> */}
-              </TextWrapper>
-            </Column1>
-            <Column2>
-              <ImgWrap>
-                <Img src={img} alt={alt} />
-              </ImgWrap>
-            </Column2>
-          </AboutRow>
+            </TextWrapper>
+          </Column1>
+          <Column2>
+            <ImgWrap>
+              <Img src={img} alt={alt} />
+            </ImgWrap>
+          </Column2>
         </AboutWrapper>
       </AboutContainer>
     </>
